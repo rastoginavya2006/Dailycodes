@@ -22,7 +22,7 @@ public class BalancedArray {
                         System.out.print(evenVal + " ");
                         sumEven += evenVal;
                     }
-                    )
+                    
                     for (int i = 1; i < n / 2; i++) {
                         int oddVal = i * 2 - 1;
                         System.out.print(oddVal + " ");
