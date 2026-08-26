@@ -22,7 +22,7 @@ public class FalseAlarm {
             st = new StringTokenizer(br.readLine());
             for (int i = 0; i < n; i++) {
                 int doorState = Integer.parseInt(st.nextToken());
-                if (doorState == 1) { 
+                if (doorState == 1) {
                     if (firstClosed == -1) {
                         firstClosed = i;
                     }
@@ -30,7 +30,6 @@ public class FalseAlarm {
                 }
             }
 
-          
             if (firstClosed == -1) {
                 sb.append("YES\n");
             } else {
@@ -42,6 +41,6 @@ public class FalseAlarm {
                 }
             }
         }
-        System.print(sb);
+        System.out.print(sb);
     }
 }
