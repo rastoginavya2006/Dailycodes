@@ -18,7 +18,7 @@ public class BlackSquare {
                 totalCalories += calories[strip];
             }
             
-            System.out.println(totalCalories);
+             System.out.println(totalCalories);
         }
         
         sc.close();
