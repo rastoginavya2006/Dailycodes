@@ -5,6 +5,7 @@ public class AngryMonk {
         Scanner sc = new Scanner(System.in);
         if (!sc.hasNextInt()) return;
         int t = sc.nextInt();
+
         
         while (t-- > 0) {
             long n = sc.nextLong();
