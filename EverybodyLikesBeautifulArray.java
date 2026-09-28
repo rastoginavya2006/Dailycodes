@@ -11,7 +11,7 @@ public class EverybodyLikesBeautifulArray {
          }
          int op=0;
          for(int i=0;i<n-1;i++){
-             if(arr[i]%2 == arr[i+1]%2){
+             if(arr[i]%2 == arr[i+1]%2){ 
                  op++;
              }
          }
