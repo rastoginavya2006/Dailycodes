@@ -6,7 +6,7 @@ public class BoringAppartments {
         
         if (sc.hasNextInt()) {
             int t = sc.nextInt();
-            
+             
             while (t-- > 0) {
                 String x = sc.next();
                 
