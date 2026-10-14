@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 import java.util.HashSet;
 
 public class AntonAndLetters {
@@ -6,7 +6,7 @@ public class AntonAndLetters {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         
-        HashSet<Character> set = new HashSet<>();
+        HashSet<Character> set = new HashSet<>(); 
         
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
