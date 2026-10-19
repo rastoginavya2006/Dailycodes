@@ -2,7 +2,7 @@ import java.util.*;
 public class AntonAndDanik{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int n =sc.nextInt();
+        int n =sc.nextInt();          
         sc.nextLine();
         String s =sc.next();
         int a=0;
