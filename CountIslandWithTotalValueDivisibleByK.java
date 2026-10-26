@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class CountIslandWithTotalValueDivisibleByK {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int[][] grid = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                grid[i][j] = sc.nextInt();
+            }
+        }
+        int k = sc.nextInt();
+        
+        System.out.println(countIslands(grid, k));
+        sc.close();
+    }
+
+    public static int countIslands(int[][] grid, int k) {
+        int m = grid.length, n = grid[0].length;
+        int ans = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] > 0) {
+                    long s = dfs(grid, i, j);
+                    if (s % k == 0) ans++;
+                }
+            }
+        }
+        return ans;
+    }
+
+    private static long dfs(int[][] grid, int i, int j) {
+        int m = grid.length, n = grid[0].length;
+        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0) return 0;
+        long sum = grid[i][j];
+        grid[i][j] = 0;
+        sum += dfs(grid, i + 1, j);
+        sum += dfs(grid, i - 1, j);
+        sum += dfs(grid, i, j + 1);
+        sum += dfs(grid, i, j - 1);
+        return sum;
+    }
+}
